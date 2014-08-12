@@ -31,6 +31,10 @@ gem 'spring',        group: :development
 
 # Use unicorn as the app server
 # gem 'unicorn'
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0'
+end
+gem 'pg'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
