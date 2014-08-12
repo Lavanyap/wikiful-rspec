@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe ArticlesController, :type => :controller do
-	it "assigns all articles as @articles" do
-      article = Article.create! valid_attributes
-      get :index, {}, valid_session
-      expect(assigns(:articles)).to eq([article])
-    end
+	
+    it "renders the :index view" do 
+    	get :index 
+    	response.should render_template :index
+    end 
 
 end

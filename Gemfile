@@ -33,9 +33,16 @@ gem 'spring',        group: :development
 # gem 'unicorn'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'factory_girl_rails'
+end
+group :test do
+	
+	gem 'capybara'
+	gem 'guard-rspec'
+	gem 'launchy'
 end
 gem 'pg'
-
+gem 'faker'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
